@@ -73,10 +73,6 @@ nav {
 .nav-items .main-nav {
 	list-style: none;
 	display: flex;
-}
-.nav-items .main-nav {
-	list-style: none;
-	display: flex;
 	margin: 10px 20px 10px 10px;
 }
 .nav-items .main-nav li a {
@@ -393,7 +389,7 @@ body {
 	padding: 10px;
 }
 
-
+	
 /* -------------------------- */
 /* ---------CONTACT---------- */
 /* -------------------------- */
@@ -409,6 +405,120 @@ body {
 .contact-info .contact{
 	border-bottom: 1px solid #7b7b7b;
 	padding: 10px;
+}
+
+/* -------------------------- */
+/* ------RESPONSIVENESS------ */
+/* -------------------------- */
+
+@media only screen and (max-width: 1200px) {
+	.tour-list .tour {
+		margin: 5% 2px;
+	}
+}
+@media only screen and (max-width: 1085px) {
+	.nav-title .phone {display: none;}
+	.pictures .tour-pic img {
+		height: 125px;
+		width: auto;
+		margin: 10px;
+	}
+	.pictures .tour-pic img:hover {
+		height: 150px;
+		width: auto;
+		margin: 10px;
+	}
+}
+
+@media only screen and (max-width: 890px) {
+	.nav-title h1 {
+		font-family: 'East Sea Dokdo', cursive;
+		margin-top: 10px;
+		font-weight: 100;
+		padding-left: 15px;
+		flex: 1;
+		font-size: 200%;
+	}
+	.body-heading {margin: 10% auto 10px auto;}
+	.body-heading .heading h3 {
+		font-size: 110%;
+		border-top: 1px solid #989898;
+		border-bottom: 1px solid #989898;
+		padding: 5px;
+	}
+	.body-heading .heading p {
+		margin-top: 20px;
+		font-size: 70%;
+	}
+	.nav-items .main-nav {
+		margin: 5px 10px 5px 5px;
+	}
+	.tour-list {
+		flex-direction: column;
+	}
+	.tour-list .tour{
+		margin: 20px;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	nav {flex-direction: column;}
+	.nav-title {text-align: center;}
+	.nav-title h1 {
+		margin: 0;
+		padding: 0;
+	}
+	.nav-items .main-nav {
+		justify-content: center;
+	}
+	.nav-items .main-nav li{
+		margin: 0;
+		padding: 0;
+		flex: 1;
+		text-align: center;
+	}
+	.nav-items .main-nav li a{
+		margin: 5px;
+		padding: 5px;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.pictures {
+		flex-direction: column;
+		justify-content: center;
+	}
+	.pictures .tour-pic {
+		text-align: center;
+	}
+	.pictures .tour-pic img {
+		height: 200px;
+		width: auto;
+	}
+	.pictures .tour-pic img:hover {
+		height: 225px;
+		width: auto;
+	}
+}
+@media only screen and (max-width: 720px) {
+	.body-heading .heading h3 {
+		font-size: 90%;
+	}
+}
+
+@media only screen and (max-width: 460px) {
+	.nav-title h1 {font-size: 150%;}
+	.pictures .tour-pic img {
+		height: 125px;
+		width: auto;
+	}
+	.pictures .tour-pic img:hover {
+		height: 125px;
+		width: auto;
+	}
+	.body-heading .heading h3 {
+		font-size: 50%;
+	}
 }
 
 
