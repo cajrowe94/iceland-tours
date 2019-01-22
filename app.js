@@ -1,7 +1,3 @@
-
-
-
-
 $(document).ready(function(){
 	//link click events, scrolls to page on screen
 	$("#story-link").click(function(){

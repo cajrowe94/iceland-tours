@@ -116,7 +116,7 @@ nav {
 /* --------BACKGROUND-------- */
 /* -------------------------- */
 header {
-	height: 100vh;
+	
 }
 body {
 	background-size: cover;
@@ -213,7 +213,9 @@ body {
 /* -------------------------- */
 /* ---------ABOUT US--------- */
 /* -------------------------- */
-
+#about-us-header {
+	height: 100vh;
+}
 .body-heading .heading span {
 	padding: 0px 5px 0px 5px;
 }
@@ -326,11 +328,88 @@ body {
 
 .section-mission {
 	width: 100%;
+	display: flex;
+	flex-direction: column;
 	background-color: rgba(255, 255, 255, 0.77);
+	text-align: center;
+}
+.section-mission .section-heading{
+	flex: 1;
+}
+.mission-text {
+	flex: 1;
+	margin: 10px;
+}
+.mission-text span{
+	font-size: 80%;
+	font-weight: 100;
+}
+.mission-text p{
+	width: 75%;
+	margin: 20px auto 50px auto;
+	font-size: 110%;
+	font-weight: 100;
+	padding: 20px;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+}
+
+/* -------------------------- */
+/* --------VIEW TOURS-------- */
+/* -------------------------- */
+
+.tour-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.tour-list .tour {
+	flex: 1;
+	margin: 10% 40px 0px 40px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.46);
+	border-radius: 5px;
+}
+.tour-list .tour p{
+	font-size: 80%;
+}
+.tour-list .tour .tour-title{
+	border-radius: 5px;
+	border-bottom: 1px solid rgba(93, 93, 93, 0.77);
+	background-color: rgba(180, 180, 180, 0.76);
+	padding: 10px;
+	box-shadow: 0px 0px 15px #000;
+}
+.tour-list .tour .tour-inc{
+	border-bottom: 1px solid rgba(93, 93, 93, 0.77);
+	font-size: 90%;
+	padding: 10px;
+}
+.tour-list .tour .tour-inc ul{
+	list-style: none;
+}
+.tour-list .tour .tour-price{
+	font-size: 90%;
+	padding: 10px;
 }
 
 
+/* -------------------------- */
+/* ---------CONTACT---------- */
+/* -------------------------- */
 
+.contact-info {
+	width: 60%;
+	padding: 20px;
+	color: #7b7b7b;
+	background-color: rgba(0, 0, 0, 0.6);
+	text-align: center;
+	margin: 5% auto 0px auto;
+}
+.contact-info .contact{
+	border-bottom: 1px solid #7b7b7b;
+	padding: 10px;
+}
 
 
 
