@@ -164,7 +164,7 @@ body {
 	background-color: rgba(0, 0, 0, 0.6);
 	border-radius: 5px;
 	box-shadow: 0 2px 5px #000000;
-	margin: 5% auto 10px auto;
+	margin: 5% auto 10% auto;
 	width: 80%;
 }
 .body-heading .heading{
@@ -428,6 +428,18 @@ body {
 		width: auto;
 		margin: 10px;
 	}
+	.section-heading h2 {
+		font-size: 100%;
+	}
+	.section-story .our-story .story-text h3 {
+		font-size: 110%;
+	}
+	.section-story .our-story .story-text p {
+		font-size: 80%;
+	}
+	.section-guides .guide-pics .guide .guide-desc {
+		font-size: 80%;
+	}
 }
 
 @media only screen and (max-width: 890px) {
@@ -459,8 +471,36 @@ body {
 	.tour-list .tour{
 		margin: 20px;
 	}
+	.section-story .our-story .story-pic img {
+		width: 250px;
+		height: auto;
+		margin-right: 20px;
+		margin-top: 10%;
+		box-shadow: 0 1px 30px #000;
+		border-radius: 5px;
+	}
+	.section-guides .guide-pics .guide .guide-pic img {
+		height: 200px;
+		width: auto;
+		margin-top: 20%;
+	}
 }
-
+@media only screen and (max-width: 765px) {
+	.section-story .our-story .story-text h3 {
+		font-size: 80%;
+	}
+	.section-story .our-story .story-text p {
+		font-size: 60%;
+	}
+	.section-story .our-story .story-pic img {
+		width: 175px;
+		height: auto;
+		margin-right: 20px;
+		margin-top: 20%;
+		box-shadow: 0 1px 30px #000;
+		border-radius: 5px;
+	}
+}
 @media only screen and (max-width: 750px) {
 	nav {flex-direction: column;}
 	.nav-title {text-align: center;}
@@ -481,9 +521,6 @@ body {
 		margin: 5px;
 		padding: 5px;
 	}
-}
-
-@media only screen and (max-width: 750px) {
 	.pictures {
 		flex-direction: column;
 		justify-content: center;
@@ -499,11 +536,39 @@ body {
 		height: 225px;
 		width: auto;
 	}
+	.section-guides .guide-pics .guide {
+		flex-direction: column;
+	}
+	.section-guides .guide-pics .guide .guide-pic{
+		text-align: center;
+		padding: 0;
+		margin: 0;
+	}
+	.section-guides .guide-pics .guide .guide-pic img{
+		padding: 0;
+		margin: 0;
+	}
+	.section-guides .guide-pics .guide .guide-desc {
+		margin: 5px;
+		flex: 1;
+		text-align: center;
+	}
 }
 @media only screen and (max-width: 720px) {
 	.body-heading .heading h3 {
 		font-size: 90%;
 	}
+}
+@media only screen and (max-width: 680px) {
+	.section-story .our-story{
+		flex-direction: column;
+	}
+	.section-story .our-story .story-pic img {
+		display: none;
+	}
+	.section-heading {
+		width: 45%;
+}
 }
 
 @media only screen and (max-width: 460px) {
@@ -518,6 +583,12 @@ body {
 	}
 	.body-heading .heading h3 {
 		font-size: 50%;
+	}
+	.body-heading .heading p {
+		font-size: 40%;
+	}
+	.mission-text p{
+		font-size: 60%;
 	}
 }
 
